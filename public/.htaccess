@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{SCRIPT_FILENAME} !-d
+# ewriteRule . /index.php [L]
+#RewriteRule ^(.*)$ /index.php/$1 [L]
+RewriteRule ^(.*)$ index.php [L]
